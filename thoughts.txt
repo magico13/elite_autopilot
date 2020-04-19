@@ -1,0 +1,5 @@
+Need to look for marker in gauge area + some buffer (to catch cases where it's on the edge)
+Once we find the gauge it shouldn't move too much each frame. Can do tracking to check previous frame area + buffer.
+ - But if we lose it for too long then we have to actually look again
+
+The target image is bright, which messes up the thresholding and we end up losing the gauge
